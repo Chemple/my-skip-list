@@ -18,3 +18,9 @@ class NaiveSpinLock {
  private:
   std::atomic<bool> lock_;
 };
+
+class NoLock {
+ public:
+  void lock() {}
+  void unlock() {}
+};
